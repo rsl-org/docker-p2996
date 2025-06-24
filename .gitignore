@@ -1,1 +1,2 @@
-root/usr
+data/usr
+.mypy_cache

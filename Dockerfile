@@ -1,8 +1,8 @@
 ARG BASE
 FROM $BASE
 
-COPY root/root /root/
-COPY root/usr/ /usr/
+COPY data/root /root/
+COPY data/usr/ /usr/
 
 ARG PARENT
 COPY configs/${PARENT}.sh /tmp/install.sh
