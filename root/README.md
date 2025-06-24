@@ -1,0 +1,1 @@
+If you want to include software in the image, drop it in this folder. This is the install path for p2996, this folder's structure should be a valid linux directory tree (ie. /bin, /include, /usr/lib etc).

@@ -1,0 +1,15 @@
+[settings]
+arch=x86_64
+compiler=clang
+compiler.cppstd=26
+compiler.version=19
+compiler.libcxx=libc++
+os=Linux
+
+[buildenv]
+CC=/usr/bin/clang
+CXX=/usr/bin/clang++
+LD_LIBRARY_PATH=/usr/lib/x86_64-unknown-linux-gnu
+
+[runenv]
+LD_LIBRARY_PATH=/usr/lib/x86_64-unknown-linux-gnu
