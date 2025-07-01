@@ -6,6 +6,9 @@ compiler.version=19
 compiler.libcxx=libc++
 os=Linux
 
+[conf]
+tools.cmake.cmaketoolchain:generator=Ninja
+
 [buildenv]
 CC=/usr/bin/clang
 CXX=/usr/bin/clang++

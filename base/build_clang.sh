@@ -9,7 +9,8 @@ cmake -G Ninja -S llvm -B build \
     -DCMAKE_INSTALL_PREFIX="../data/usr" \
     -DCMAKE_INSTALL_RPATH="$ORIGIN/../lib;$ORIGIN/../lib64" \
     -DLLVM_RUNTIME_TARGETS="x86_64-unknown-linux-gnu" \
-    -DCMAKE_BUILD_WITH_INSTALL_RPATH=ON
+    -DCMAKE_BUILD_WITH_INSTALL_RPATH=ON \
+    -DCLANG_DEFAULT_CXX_STDLIB=libc++
 
 ninja -C build
 ninja -C build install

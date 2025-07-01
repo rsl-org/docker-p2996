@@ -1,2 +1,3 @@
-data/usr
 .mypy_cache
+
+GH_TOKEN
