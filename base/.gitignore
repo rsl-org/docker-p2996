@@ -1,2 +1,3 @@
 data/usr
 **/build
+**/.cache
