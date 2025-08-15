@@ -8,10 +8,6 @@ RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master
 RUN sed -i 's/robbyrussell/eastwood/g' /root/.zshrc
 RUN chsh -s /bin/zsh
 
-# local conan repository for in-dev versions of dependencies
-RUN git clone https://github.com/rsl-org/conan
-RUN conan remote add rsl ./conan
-
 # local user setup helper
 COPY setup_user.sh /setup_user.sh
 RUN chmod a+x /setup_user.sh
